@@ -1,0 +1,33 @@
+{
+  "name": "ucraft-com/twilio-client",
+  "description": "Twilio client helps application easily send sms messages.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Uc\\TwilioClient\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Arsen Melkonyan",
+      "email": "arsen.m@ucraft.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=8.1",
+    "twilio/sdk": "dev-main"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^7.5.0",
+    "phpunit/phpunit": "^9.5.10"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Uc\\TwilioClient\\TwilioClientServiceProvider"
+      ]
+    }
+  }
+}
